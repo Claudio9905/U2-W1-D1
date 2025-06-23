@@ -482,7 +482,9 @@ footer a {
 /* STILI PER LA STAMPA */
 
 @media print {
-  header main footer {
+  header,
+  main,
+  footer {
     width: 90%;
     height: auto;
   }
