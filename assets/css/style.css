@@ -201,13 +201,6 @@ footer a {
 
 /* STILI PER LA VERSIONE DESKTOP */
 @media screen and (min-width: 1200px) {
-  header,
-  main,
-  footer {
-    margin-left: 8em;
-    margin-right: 8em;
-  }
-
   /* lavoro sul header */
 
   header {
@@ -307,8 +300,8 @@ footer a {
 
   main table {
     position: relative;
-    left: 10em;
-    width: 45em;
+    left: 13em;
+    width: 55em;
     margin-top: 6em;
     margin-bottom: 6em;
   }
@@ -322,7 +315,7 @@ footer a {
     /* position: relative; */
     /* left: 3.9em; */
     margin-right: -0.3em;
-    margin-left: 6em;
+    margin-left: 10em;
   }
 
   main section {
@@ -350,10 +343,10 @@ footer a {
 
   main aside div {
     display: inline-block;
-    width: 21em;
+    width: 25em;
     margin: -2px;
     position: relative;
-    left: 5.2em;
+    left: 3.2em;
   }
 
   /* lavoro sul footer */
@@ -361,14 +354,6 @@ footer a {
 
 /* STILI PER LA VERSIONE MEDIUM */
 @media screen and (min-width: 768px) {
-  header,
-  main,
-  footer {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   /* lavoro sul header */
 
   header img {
@@ -407,7 +392,7 @@ footer a {
 
   main table {
     position: relative;
-    left: 5.5em;
+    left: 10.5em;
     width: 29em;
     margin-top: 6em;
     margin-bottom: 6em;
@@ -491,5 +476,18 @@ footer a {
 
   footer address {
     font-size: 1.5em;
+  }
+}
+
+/* STILI PER LA STAMPA */
+
+@media print {
+  header main footer {
+    width: 90%;
+    height: auto;
+  }
+
+  header nav {
+    display: none;
   }
 }
